@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import '~antd/dist/antd.less';
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.banner-wrapper {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+  background-color: white;
+}
+
+.banner-wrapper h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+@media (min-width: 768px) {
+  .banner-wrapper {
+    padding: 3rem 0;
+  }
+
+  .banner-wrapper h1 {
+    font-size: 6rem;
+  }
+}
+
+.content-wrapper {
+  background: #d9d9d9;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+@media (min-width: 650px) {
+  .content-wrapper {
+    padding: 4rem 1rem;
+  }
+}
+
+@media (min-width: 1250px) {
+  .content-wrapper {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
